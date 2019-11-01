@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  match("/", controller: "application", action: "home", via: "get")
 
   # ================================================
   devise_for :admin_users, ActiveAdmin::Devise.config
